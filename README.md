@@ -43,6 +43,7 @@ flowchart  TD;
 1.Modeling in blender
 
 ![image]https://github.com/zhangxiangna/CreativeMakingFinalProject/blob/main/image/Plant.png
+
 2.Production of AR effect
 
 3.Making physical cards
