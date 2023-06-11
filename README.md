@@ -2,6 +2,7 @@
 ## IMPORTANT
 
 Since the project file was too large to upload to GitHub, please visit the Google drive link:https://drive.google.com/drive/folders/1jOGc4t22C0EEfBVvQTgmi63AQ2Ziq-kU
+As well I have uploaded our demo video to YouTube:https://www.youtube.com/watch?v=tUG7uL7mt8Y
 
 
 ## introduction
@@ -47,7 +48,6 @@ flowchart  TD;
 ## What I did in this Project
 ### 1.Modeling in blender
 
-![Plant](https://github.com/zhangxiangna/CreativeMakingFinalProject/raw/main/image/Plant.png "Plant")
 ![Island](https://github.com/zhangxiangna/CreativeMakingFinalProject/raw/main/image/Island.png "Island")
 
 ### 2.Making physical cards
