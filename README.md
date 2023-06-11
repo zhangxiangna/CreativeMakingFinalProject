@@ -17,16 +17,19 @@ Ar SDK: Vuforia
 ```mermaid
 flowchart  TD;
     A[Start] --> B(Scanning other cards)
+    A -->S(Exchange cards in real world)
+    S -->B 
+    S -->E 
     B --> D(Press the View button)
     A -->E(Scanning Cedrus cards)
     B -->G(Press the plant button)
-    G -->C(Planting in the corresponding area)
+    G --click-->C(Planting in the corresponding area)
     C -->H(Different animals appear)
     E -->J(Press the View button)
     J -->Q[Show animation]
     D -->R[Show animation]
     E -->K(Press the plant button)
-    K -->N(Planting on Snowland)
+    K --click-->N(Planting on Snowland)
     N -->L{Is Mushrrom planted}
     L --Yes-->M(Monkey appear)
     L --No-->O(Pop-up tips)
@@ -36,5 +39,6 @@ flowchart  TD;
 
 ## What I did in this Project
 1.Modeling in blender
+
 2.Production of AR effect
 3.Making physical cards
