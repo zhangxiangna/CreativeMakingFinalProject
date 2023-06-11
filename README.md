@@ -47,7 +47,7 @@ flowchart  TD;
 
 ### 2.Making physical cards
 
-![Mushroom](https://github.com/zhangxiangna/CreativeMakingFinalProject/raw/main/image/Mushroom.jpg "Mushroom")
+![Mushroom](https://github.com/zhangxiangna/CreativeMakingFinalProject/raw/main/image/Mushroom.jpg "Mushroom" =300x400)
 ![retree4](https://github.com/zhangxiangna/CreativeMakingFinalProject/raw/main/image/redtree4.jpg "redtree4")
 
 ### 3.Production of AR effect
@@ -78,15 +78,6 @@ public class BtnMouse : MonoBehaviour
             else if (buttons[i].VirtualButtonName == "Tree")
             {
                 buttons[i].RegisterOnButtonPressed(PressTree);
-            }
-            else if (buttons[i].VirtualButtonName == "Arrow")
-            {
-                buttons[i].RegisterOnButtonPressed(PressArrow);
-            }
-            else if (buttons[i].VirtualButtonName == "Back")
-            {
-                buttons[i].RegisterOnButtonPressed(PressBack);
-            }
         }
     }
 
@@ -102,17 +93,6 @@ public class BtnMouse : MonoBehaviour
         Debug.Log(obj.VirtualButtonName + " pressed");
     }
 
-    private void PressArrow(VirtualButtonBehaviour obj)
-    {
-        MouseArrow();
-        Debug.Log(obj.VirtualButtonName + " pressed");
-    }
-
-    private void PressBack(VirtualButtonBehaviour obj)
-    {
-        MouseBack();
-        Debug.Log(obj.VirtualButtonName + " pressed");
-    }
 
     private void MouseGrass()
     {
@@ -123,15 +103,6 @@ public class BtnMouse : MonoBehaviour
     {
         MouseZhuangtai = 1;
     }
-
-    private void MouseArrow()
-    {
-        MouseZhuangtai = 0;
-    }
-
-    private void MouseBack()
-    {
-        MouseZhuangtai = 3;
     }
     }
 ```
