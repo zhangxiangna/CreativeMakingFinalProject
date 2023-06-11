@@ -47,7 +47,7 @@ flowchart  TD;
 
 ### 2.Making physical cards
 
-![Mushroom](https://github.com/zhangxiangna/CreativeMakingFinalProject/raw/main/image/Mushroom.jpg "Mushroom"width="400" height="300")
+![Mushroom](https://github.com/zhangxiangna/CreativeMakingFinalProject/raw/main/image/Mushroom.jpg "Mushroom")
 ![retree4](https://github.com/zhangxiangna/CreativeMakingFinalProject/raw/main/image/redtree4.jpg "redtree4")
 
 ### 3.Production of AR effect
@@ -58,7 +58,7 @@ Before, our plan was to scan the poster, project an augmented reality island, an
 I mainly use two functions in augmented reality, the first one is to generate an augmented reality island by recognizing pictures in reality.
 ![Effect](https://github.com/zhangxiangna/CreativeMakingFinalProject/raw/main/image/Effect.png "Effect")
 
-The second feature is the virtual button function, which interacts with the augmented reality island on the screen by overlaying a part of the picture in reality in order to let players feel different ways of interaction
+The second feature is the virtual button function, which interacts with the augmented reality island on the screen by overlaying a part of the picture in reality in order to let players feel different ways of interaction.Here is an excerpt of the code.
 ```ruby
 public class BtnMouse : MonoBehaviour
 {
@@ -108,4 +108,74 @@ public class BtnMouse : MonoBehaviour
 ```
 
 
+*** Final Plan ***
 
+But after a group discussion, we decided that this did not look well. Eventually we changed in order to scan realistic physical cards to unlock different plants, planted on the screen of the island, and thus unlock different animals.Here is an excerpt of the code.This code is designed to implement virtual buttons in Unity, triggering different behaviors depending on the button press, such as playing particle effects, instantiating objects, loading scenes, etc.
+```ruby
+
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Vuforia;
+using UnityEngine.SceneManagement;
+public class BtnVisual_Sand : MonoBehaviour
+{
+    private VirtualButtonBehaviour[] buttons;
+    public Vector3 TreePos;
+    public GameObject Turtle;
+    public GameObject SandTree;
+    private Grow grow;
+    void Start()
+    {
+        buttons = this.GetComponentsInChildren<VirtualButtonBehaviour>();
+        grow = SandTree.GetComponent<Grow>();
+        for (int i = 0; i < buttons.Length; i++)
+        {
+            if (buttons[i].VirtualButtonName == "SandView")
+            {
+                buttons[i].RegisterOnButtonPressed(SandView);
+            }
+            else if (buttons[i].VirtualButtonName == "Plant")
+            {
+                buttons[i].RegisterOnButtonPressed(Plant);
+            }
+        }       
+    }
+
+    private void SandView(VirtualButtonBehaviour obj)
+    {
+        SandView();
+        Debug.Log(obj.VirtualButtonName + " pressed");
+    }
+    private void Plant(VirtualButtonBehaviour obj)
+    {
+        Plant();
+        Debug.Log(obj.VirtualButtonName + " pressed");
+    }
+
+    private void SandView()
+    {
+        grow.PlayParticleEffect();
+        GameObject[] animals = GameObject.FindGameObjectsWithTag("Animal");
+        if (animals.Length > 0)
+        {
+            Debug.Log("存在标记为'Animal'的对象");
+        }
+        else
+        {
+            GameObject turtleInstance = Instantiate(Turtle, SandTree.transform.position, Quaternion.identity);
+            TurtleController turtleController = turtleInstance.GetComponent<TurtleController>();
+            TreePos = SandTree.transform.position;
+            turtleController.SetCenterPoint(TreePos);
+        }
+    }
+    private void Plant()
+    {
+        SceneManager.LoadScene(0);
+    }
+}
+```
+
+As well as this is the final result, the complete show in the video.
+![image](https://github.com/zhangxiangna/CreativeMakingFinalProject/raw/main/image/2023-06-12.png "2023-6-12")
