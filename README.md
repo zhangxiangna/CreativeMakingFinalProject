@@ -47,7 +47,7 @@ flowchart  TD;
 
 ### 2.Making physical cards
 
-![Mushroom](https://github.com/zhangxiangna/CreativeMakingFinalProject/raw/main/image/Mushroom.jpg "Mushroom"){width=300px height=400px}
+![Mushroom](https://github.com/zhangxiangna/CreativeMakingFinalProject/raw/main/image/Mushroom.jpg "Mushroom"){width=30px height=40px}
 ![retree4](https://github.com/zhangxiangna/CreativeMakingFinalProject/raw/main/image/redtree4.jpg "redtree4")
 
 ### 3.Production of AR effect
