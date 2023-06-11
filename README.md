@@ -108,7 +108,7 @@ public class BtnMouse : MonoBehaviour
 ```
 
 
-*** Final Plan ***
+### Final Plan ###
 
 But after a group discussion, we decided that this did not look well. Eventually we changed in order to scan realistic physical cards to unlock different plants, planted on the screen of the island, and thus unlock different animals.Here is an excerpt of the code.This code is designed to implement virtual buttons in Unity, triggering different behaviors depending on the button press, such as playing particle effects, instantiating objects, loading scenes, etc.
 ```ruby
