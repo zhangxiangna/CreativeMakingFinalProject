@@ -43,6 +43,7 @@ flowchart  TD;
 1.Modeling in blender
 
 ![Plant](https://github.com/zhangxiangna/CreativeMakingFinalProject/raw/main/image/Plant.png "Plant")
+![Island](https://github.com/zhangxiangna/CreativeMakingFinalProject/raw/main/image/Island.png "Island")
 
 2.Production of AR effect
 
