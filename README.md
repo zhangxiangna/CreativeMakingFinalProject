@@ -2,8 +2,10 @@
 ## 
 ```mermaid
   flowchart  TD;
-      Start-->B;
-      A-->C;
-      B-->D;
-      C-->D;
+      Start-->Scanning other cards;
+      Start-->Scanning Mushroom cards;
+      Scanning other cards-->Press the view button;
+      Press the view button-->Animation;
+      Scanning other cards-->Press the plant button;
+      
 ```
