@@ -2,8 +2,9 @@
 ## 
 ```mermaid
 flowchart  TD;
-    Start-->Scanning other cards;
-    Start-->Scanning the mushroom card;
-    Scanning other cards-->a;
-    Scanning the mushroom card-->b;  
+    A[Christmas] -->|Get money| B(Go shopping)
+    B --> C{Let me think}
+    C -->|One| D[Laptop]
+    C -->|Two| E[iPhone]
+    C -->|Three| F[fa:fa-car Car]
 ```
