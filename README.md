@@ -1,5 +1,8 @@
 # ISLAND
-## 
+##introduction
+island
+##
+## Game Flow
 ```mermaid
 flowchart  TD;
     A[Start] --> B(Scanning other cards)
@@ -9,6 +12,8 @@ flowchart  TD;
     G -->C(Planting in the corresponding area)
     C -->H(Different animals appear)
     E -->J(Press the View button)
+    J -->Q[Show animation]
+    D -->R[Show animation]
     E -->K(Press the plant button)
     K -->N(Planting on Snowland)
     N -->L{Is Mushrrom planted}
