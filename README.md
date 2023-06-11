@@ -1,8 +1,8 @@
-# CreativeMakingFinalProject
+# ISLAND
 ## 
 ```mermaid
   flowchart  TD;
-      A-->B;
+      Start-->B;
       A-->C;
       B-->D;
       C-->D;
