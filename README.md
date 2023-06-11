@@ -1,7 +1,7 @@
 # ISLAND
-## Important
+## IMPORTANT
 
-Since the project file was too large to upload to GitHub, we had to split the entire folder into two. If you have any problems during the process, please visit the Google drive link:https://drive.google.com/drive/folders/1KYrXLZlQLnMg7Ab8YnyG5kBm3IEmdZy6
+Since the project file was too large to upload to GitHub, we had to split the entire folder into two. If you have any problems during the process, please visit the Google drive link:https://drive.google.com/drive/folders/1jOGc4t22C0EEfBVvQTgmi63AQ2Ziq-kU
 
 
 ## introduction
