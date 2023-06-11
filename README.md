@@ -2,8 +2,8 @@
 ## 
 ```mermaid
 flowchart  TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;  
+    Start-->Scanning other cards;
+    Start-->Scanning the mushroom card;
+    Scanning other cards-->a;
+    Scanning the mushroom card-->b;  
 ```
