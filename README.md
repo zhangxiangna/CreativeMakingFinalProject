@@ -1,4 +1,9 @@
 # ISLAND
+## Important
+
+Since the project file was too large to upload to GitHub, we had to split the entire folder into two. If you have any problems during the process, please visit the Google drive link:https://drive.google.com/drive/folders/1KYrXLZlQLnMg7Ab8YnyG5kBm3IEmdZy6
+
+
 ## introduction
 Island is a game developed on Unity. In the game, the player will start having an empty island which will be shown on the screen. By collecting **physical cards** of different plants and scanning them by camera, the player can generate an augmented **reality (AR) model**. Then, the player can select the corresponding area to grow plants and click on the plants to unlock five different animals.Through the interaction with plants, players will gradually unlock and discover various animals, increasing the fun and exploration of the game.
 
