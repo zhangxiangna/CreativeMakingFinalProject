@@ -115,7 +115,13 @@ public class BtnMouse : MonoBehaviour
 
 ### Final Plan ###
 
-But after a group discussion, we decided that this did not look well. Eventually we changed in order to scan realistic physical cards to unlock different plants, planted on the screen of the island, and thus unlock different animals.Here is an excerpt of the code.This code is designed to implement virtual buttons in Unity, triggering different behaviors depending on the button press, such as playing particle effects, instantiating objects, loading scenes, etc.
+But after a group discussion, we decided that this did not look well. Eventually we changed in order to scan realistic physical cards to unlock different plants, planted on the screen of the island, and thus unlock different animals.
+
+As well as this is the final result, the complete show in the video.
+![image](https://github.com/zhangxiangna/CreativeMakingFinalProject/raw/main/image/2023-06-12.png "2023-6-12")
+
+Here is an excerpt of the code.This code is designed to implement virtual buttons in Unity, triggering different behaviors depending on the button press, such as playing particle effects, instantiating objects, loading scenes, etc.
+
 ```ruby
 
 using System;
@@ -182,5 +188,3 @@ public class BtnVisual_Sand : MonoBehaviour
 }
 ```
 
-As well as this is the final result, the complete show in the video.
-![image](https://github.com/zhangxiangna/CreativeMakingFinalProject/raw/main/image/2023-06-12.png "2023-6-12")
