@@ -32,7 +32,7 @@ flowchart  TD;
     K --click-->N(Planting on Snowland)
     N -->L{Is Mushrrom planted}
     L --Yes-->M(Monkey appear)
-    L --No-->O(Pop-up tips)
+    L --No-->O[Pop-up tips]
     M -->P[Complete achievement]
     H -->P
 ```
