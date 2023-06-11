@@ -42,7 +42,7 @@ flowchart  TD;
 ## What I did in this Project
 1.Modeling in blender
 
-![Plant]https://github.com/zhangxiangna/CreativeMakingFinalProject/blob/main/image/Plant.png
+![Plant]https://github.com/zhangxiangna/CreativeMakingFinalProject/blob/main/image/Plant.png?raw=true 'Plant'
 
 2.Production of AR effect
 
