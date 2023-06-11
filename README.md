@@ -5,7 +5,7 @@ Island is a game developed on Unity. In the game, the player will start having a
 Island combines elements of placement games and augmented reality to provide players with a unique experience. Players will collect and exchange cards with other players in the game to eventually unlock all animals.
 
 ## The technologies we use
-Unity
+Unity/n
 Blender
 Adobe Illustrator
 Ar SDK: Vuforia
