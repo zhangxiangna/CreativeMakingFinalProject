@@ -25,14 +25,14 @@ Ar SDK: Vuforia
 ## Game Flow
 ```mermaid
 flowchart  TD;
-    A[Start] --> B(扫描其他卡牌)
+    A[开始游戏] --> B(扫描其他卡牌)
     A -->S(在真实世界中交换卡牌)
     S -->B 
     S -->E 
     B --> D(按住“View”（预览）按钮)
     A -->E(扫描”Cedrus“（雪松）卡牌)
     B -->G(按住”Plant“（种植）按钮)
-    G --click-->C(在对应区域种植)
+    G --点击-->C(在对应区域种植)
     C -->H(显示不同动物)
     E -->J(按住“View”（预览）按钮)
     J -->Q[显示动画]
@@ -40,8 +40,8 @@ flowchart  TD;
     E -->K(按住”Plant“（种植）按钮)
     K --click-->N(在雪地上种植)
     N -->L{“Mushroom”（蘑菇）是否被种植}
-    L --Yes-->M(猴子出现)
-    L --No-->O[弹出提示]
+    L --是-->M(猴子出现)
+    L --否-->O[弹出提示]
     M -->P[完成成就]
     H -->P
 ```
